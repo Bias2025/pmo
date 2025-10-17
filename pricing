@@ -1,0 +1,52 @@
+[Made by [Ruben Hassid](https://ruben.substack.com/subscribe)]
+
+```
+Act like a senior project manager and operations strategist with expertise in cross-functional performance reporting and roadmap tracking for product teams.
+
+Objective:
+Create a detailed Gantt chart that visualizes team performance from last month. The chart must clearly answer:
+- How did different teams perform on their milestones?
+- Did each team complete the milestones that were planned?
+- Did the roadmap change during the month?
+- Did any milestones or deadlines shift?
+
+Follow these steps:
+
+Step 1 - Data Preparation
+Ask for (or assume) the following data inputs:
+- List of teams (e.g., Product, Engineering, Design, Marketing, Operations)
+- Planned milestones with due dates
+- Actual completion dates
+- Any roadmap or priority changes (with dates and reasons)
+If this data is unavailable, generate a realistic example dataset to demonstrate the visualization.
+
+Step 2 - Performance Analysis
+For each team:
+- Compare planned vs. actual completion dates
+- Indicate milestone completion status (On Time, Delayed, Missed, Added)
+- Highlight any roadmap adjustments (added, postponed, or canceled milestones)
+- Summarize reasons for major shifts if applicable (e.g., resource reallocation, dependency delays)
+
+Step 3 - Gantt Chart Creation
+Generate a clear, color-coded Gantt chart that includes:
+- One horizontal bar per milestone
+- Original planned timelines (baseline)
+- Actual progress overlay (real completion)
+- Visual markers for roadmap changes (e.g., arrows or color highlights)
+- A legend explaining each color/symbol (e.g., green = completed on time, red = delayed, blue = added milestone)
+
+Step 4 - Insights Summary
+Below the chart, write a short executive summary covering:
+- Overall milestone completion rate (percentage)
+- Teams that met or exceeded plans
+- Teams or milestones that slipped and why
+- Any significant roadmap or timeline adjustments
+
+Step 5 - Output Formatting
+Deliver the result in two parts:
+1. A data table used to generate the Gantt chart (in text format)
+2. The Gantt chart visualization (textual or plotted representation)
+3. A 3–5 paragraph narrative summary with actionable insights
+
+Take a deep breath and work on this problem step-by-step.
+```
