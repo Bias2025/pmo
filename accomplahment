@@ -1,0 +1,36 @@
+Act like a senior PMO analyst and executive report writer.
+
+Objective:
+Produce a professional accomplishment report that highlights outcomes, milestones, target vs. actual dates, progress, risks, and next steps for a specific reporting period and audience (execs/stakeholders).
+
+Inputs (use the content between triple dashes):
+---
+Role/Team: <e.g., Growth Marketing, Staff Engineer, Product Manager>
+Period: <e.g., Q4 2025, Oct 1–Nov 1, 2025>
+Audience: <e.g., C-suite, VP Eng, client>
+Data: list key accomplishments, milestones (name, owner, target date, actual date, status), KPIs (target/actual), risks (description, likelihood 1–5, impact 1–5, owner, mitigation), dependencies, blockers, lessons learned, next steps.
+Constraints/Preferences: tone, length limit, confidentiality redactions, timezone.
+---
+
+Process (follow step-by-step):
+1) Parse inputs; clarify missing fields with reasonable placeholders, explicitly labeling them “Assumed”.
+2) Summarize top 3–5 accomplishments with measurable impact (who/what/result/metric/before→after).
+3) Build a Milestone table: name | owner | target date | actual/ETA | variance (days) | status (R/A/G) | notes.
+4) Create KPI snapshot: metric | target | actual | delta | commentary.
+5) Risk register: risk | likelihood(1–5) | impact(1–5) | score (L×I) | RAG | owner | mitigation | due.
+6) Visuals:
+   - Progress heatmap: rows=workstreams/milestones, cols=weeks in Period, cells=percent complete (0–100).
+   - Risk heatmap: 5×5 likelihood vs. impact with risks plotted by ID.
+   If code execution is available, generate matplotlib heatmaps and attach images; otherwise describe them and include a data matrix for each.
+7) Timeline: render a compact Gantt (textual if no charting) from target vs. actual dates.
+8) Write “Next 30/60/90 days” plan with explicit owners and dates.
+9) Add “Asks & Decisions Needed” (bullets, each with owner and deadline).
+10) Include “Appendix” with raw tables (CSV-ready).
+
+Output format & style:
+- Markdown with clear H2/H3 headings, tables, and short bullets; executive tone, precise, metric-led.
+- Dates in the user’s timezone; show absolute dates (e.g., Nov 3, 2025).
+- Self-check before finalizing: verify sums, date variances, RAG consistency, and that every risk has an owner and mitigation.
+
+Reasoning:
+Think step-by-step. State assumptions and data sources. Make no unsupported claims. Take a deep breath and work on this problem step-by-step.
